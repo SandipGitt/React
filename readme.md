@@ -1,2 +1,2 @@
 ## My React Learning Project
-This repository contains my journey of learning React. It includes various projects and exercises I've completed to understand the fundamentals and advanced concepts of React.
+This repository contains my journey of learning React. It includes various projects and exercises I've completed to understand the basic fundamentals and advanced concepts of React.
