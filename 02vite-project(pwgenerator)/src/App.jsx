@@ -5,6 +5,7 @@ function App() {
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(true);
   const [password, setPassword] = useState("")
+  const [isClicked, setIsClicked] = useState(false);
 
   const passwordRef = useRef(null)
 
@@ -25,6 +26,7 @@ function App() {
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     window.navigator.clipboard.writeText(password)
+    setIsClicked(true);
   }, [password])
 
   useEffect(() => {
@@ -46,7 +48,7 @@ function App() {
           />
           <button
           onClick={copyPasswordToClipboard}
-          className='outline none bg-blue-700 text-white px-2 py-0.5 shrink-0'
+          className={`outline-none text-white px-2 py-0.5 shrink-0 ${isClicked ? 'bg-green-500' : 'bg-blue-700'}`}
           >Copy</button>
       </div>
       <div className='flex text-sm gap-x-2'>
