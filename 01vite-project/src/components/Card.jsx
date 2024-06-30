@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username}) {
+function Card({username = "Visit Me"}) {
   return (
     <section>
   <div className="mx-auto max-w-7xl px-2 lg:px-0">
