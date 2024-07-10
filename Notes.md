@@ -1,3 +1,4 @@
+#Lessions Learned
 1. The createRoot create's its own DOM and then compare it with the web browser's DOM and only update those components which are actually updated.
 2. But the browser removes the whole DOM and then recrates the whole DOM with the updated values this is called reload.
 3. However virtual DOM tracks whole DOM like a tree like structure and updates only those values which were only changed.
@@ -7,3 +8,6 @@
 7. The algo react uses to differentiate the web browser's tree and React's tree formed through create root is called reconciliation.
 8. Reconciliation is the algo behind what popularly known as the Virtual-DOM.
 9. In UI it is not necessary for every update to be applied immediately.
+
+##from bg-changer
+onclick = {}  It expects that we would pass a function to it.  we can pass the reference  of the function but if we do that we can't give the parameters (if need more clarity watch bg changer video from timestamp 15:00)
