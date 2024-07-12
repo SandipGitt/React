@@ -11,3 +11,6 @@
 
 ## from bg-changer
 onclick = {}  It expects that we would pass a function to it.  we can pass the reference  of the function but if we do that we can't give the parameters (if need more clarity watch bg changer video from timestamp 15:00)
+
+## from pw-generator
+useCallback => It is used to cache data between re-renders
