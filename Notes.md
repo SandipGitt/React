@@ -14,3 +14,7 @@ onclick = {}  It expects that we would pass a function to it.  we can pass the r
 
 ## from pw-generator
 useCallback => It is used to cache data between re-renders
+
+## from currency converter
+Generally, the data returned by the api calls are in string format
+Remember the key in loops
